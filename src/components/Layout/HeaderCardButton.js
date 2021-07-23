@@ -9,8 +9,8 @@ export default function HeaderCardButton(props) {
         <span className={classes.icon}>
           <CartIcon />
         </span>
-        <span>{props.children}</span>
-        <span className={classes.badge}>{props.numItems}</span>
+        <span>Your Cart</span>
+        <span className={classes.badge}>3</span>
       </button>
     </Fragment>
   );
