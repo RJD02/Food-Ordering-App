@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
+import Card from "../UI/Card";
 import classes from "./AvailableMeals.module.css";
+import MealItem from "./MealItem";
 const DUMMY_MEALS = [
   {
     id: uuidv4(),
@@ -30,14 +32,18 @@ const DUMMY_MEALS = [
 export default function AvailableMeals() {
   const mealsList = DUMMY_MEALS.map((meal) => {
     return (
-      <li>{meal.name}</li>
-      // <li>{meal.description}</li>
-      // <li>{meal.price}</li>
+      <MealItem
+        name={meal.name}
+        description={meal.description}
+        price={meal.price}
+      />
     );
   });
   return (
     <section className={classes.meals}>
-      <ul>{mealsList}</ul>
+      <Card>
+        <ul>{mealsList}</ul>
+      </Card>
     </section>
   );
 }
