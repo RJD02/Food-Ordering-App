@@ -1,6 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import classes from "./Cart.module.css";
+import Modal from "./Modal";
 export default function Cart() {
   const cartItems = (
     <ul className={classes["cart-items"]}>
@@ -10,7 +11,7 @@ export default function Cart() {
     </ul>
   );
   return (
-    <div>
+    <Modal>
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
@@ -20,6 +21,6 @@ export default function Cart() {
         <button className={classes["button--alt"]}>Close</button>
         <button className={classes.button}>Order</button>
       </div>
-    </div>
+    </Modal>
   );
 }
