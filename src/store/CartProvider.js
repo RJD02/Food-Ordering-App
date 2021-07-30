@@ -10,5 +10,9 @@ export default function CartProvider(props) {
     addItem: addItemToCartHandler,
     removeItem: removeItemFromCartHandler,
   };
-  return <CartContext.Provider>{props.children}</CartContext.Provider>;
+  return (
+    <CartContext.Provider value={cartContext}>
+      {props.children}
+    </CartContext.Provider>
+  );
 }
