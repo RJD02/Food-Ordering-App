@@ -5,7 +5,7 @@ import classes from "./HeaderCardButton.module.css";
 export default function HeaderCardButton(props) {
   return (
     <Fragment>
-      <button className={classes.button}>
+      <button className={classes.button} onClick={props.onClick}>
         <span className={classes.icon}>
           <CartIcon />
         </span>
