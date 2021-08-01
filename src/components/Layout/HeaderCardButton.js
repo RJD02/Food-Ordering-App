@@ -14,7 +14,7 @@ export default function HeaderCardButton(props) {
           <CartIcon />
         </span>
         <span>Your Cart</span>
-        <span className={classes.badge}>{ctx.totalAmount}</span>
+        <span className={classes.badge}>{numberOfCartItems}</span>
       </button>
     </Fragment>
   );
