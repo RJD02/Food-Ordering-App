@@ -4,25 +4,29 @@ import classes from "./AvailableMeals.module.css";
 import MealItem from "./MealItem";
 const DUMMY_MEALS = [
   {
-    id: uuidv4(),
+    // id: uuidv4(),
+    id: "a",
     name: "Sushi",
     description: "Finest fish and veggies",
     price: 22.99,
   },
   {
-    id: uuidv4(),
+    // id: uuidv4(),
+    id: "b",
     name: "Schnitzel",
     description: "A german specialty!",
     price: 16.5,
   },
   {
-    id: uuidv4(),
+    // id: uuidv4(),
+    id: "c",
     name: "Barbecue Burger",
     description: "American, raw, meaty",
     price: 12.99,
   },
   {
-    id: uuidv4(),
+    // id: uuidv4(),
+    id: "d",
     name: "Green Bowl",
     description: "Healthy...and green...",
     price: 18.99,
